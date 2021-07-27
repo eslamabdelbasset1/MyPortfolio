@@ -2481,6 +2481,7 @@ footer .copyright span:last-child::after {
 	}
 	footer .copyright span {
 		display: block;
+		cursor: pointer;
 	}
 	footer .copyright span::after {
 		display: none;
