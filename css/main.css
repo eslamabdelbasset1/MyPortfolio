@@ -94,7 +94,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.5s;
 	outline: 0;
 }
-
+.website{color: #888888 !important}
 /** 
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
