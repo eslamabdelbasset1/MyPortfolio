@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: #fefefe;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -91,6 +91,7 @@ a, a:visited {
 }
 a:hover, a:focus, a:active {
 	color: #FF0077;
+	transition: all 0.5s;
 	outline: 0;
 }
 
@@ -962,7 +963,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
-	background: #FF0077;
+	background: #4e4e4e;
 	position: relative;
 	height: 100%;
 }
@@ -975,7 +976,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: white;
 	font-size: 1.1rem;
 	line-height: 1;
-	background: #FF0077;
+	background: #525252;
 	padding: .6rem .6rem;
 	border-radius: 3px;
 }
@@ -986,7 +987,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: -5px;
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
-	border-top: 5px solid #FF0077;
+	border-top: 5px solid #525252;
 	content: "";
 }
 
@@ -1032,7 +1033,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	font-size: 3.6rem;
 	color: #313131;
 	line-height: 1.25;
-	margin-bottom: 2.2rem;
+	margin-bottom: 5.2rem;
 }
 .section-intro h5 {
 	color: #FF0077;
@@ -1105,16 +1106,15 @@ header .logo {
 }
 header .logo a {
 	display: block;
-	margin: 0;
+	margin-top: -0.2rem;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
+	font-size: 2.6rem;
+	font-weight: 900;
+	letter-spacing: 5px;
 	text-shadow: none;
-	color: transparent;
-	width: 100px;
+	width: 112px;
 	height: 25px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 100px 35px;
 }
 
 /**
@@ -2517,9 +2517,9 @@ footer .copyright span:last-child::after {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
-	height: 6.6rem;
-	width: 6rem;
-	line-height: 6.6rem;
+	height: 4.6rem;
+	width: 4rem;
+	line-height: 4.6rem;
 	text-align: center;
 	background: #cc005f;
 	color: #FFFFFF;
