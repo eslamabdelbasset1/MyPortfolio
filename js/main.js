@@ -216,6 +216,18 @@
 	/*	contact form
 	------------------------------------------------------ */
 
+	function sendEmail() {
+		emailjs.send("service_eslam1999","template_rl3ll7a",{
+			from_name: document.querySelector("#from_name").value,
+			to_name: document.querySelector("#to_name").value,
+			message: document.querySelector("#message").value,
+			email_to: document.querySelector("#email_to").value
+		}).then(response => {
+			alert('Your email was sent successfully.');
+		});
+	}
+	document.querySelector(".submitform").addEventListener("click",sendEmail)
+
 	/* local validation */
 	$('#contactForm').validate({
 
@@ -224,10 +236,7 @@
 
 			var sLoader = $('#submit-loader');
 
-			$.ajax({      	
-
-		      // type: "POST",
-		      // url: "inc/sendEmail.php",
+			$.ajax({
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -249,19 +258,22 @@
 	               $('#message-warning').html(msg);
 		            $('#message-warning').fadeIn();
 	            }
-
 		      },
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
 		      	$('#message-warning').html("Something went wrong. Please try again.");
 		         $('#message-warning').fadeIn();
-
 		      }
-
 	      });     		
   		}
 
+	});
+
+	$(".submitform").click(function () {
+		setTimeout(function () {
+			location.reload(true);
+		},2000);
 	});
 
  	/*----------------------------------------------------- */
